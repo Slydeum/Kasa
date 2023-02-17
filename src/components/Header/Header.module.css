@@ -45,16 +45,16 @@
   }
 }
 
-/*Media queries pour mobiles*/
+/*mobiles*/
 @media screen and (max-width: 480px) {
   .logoHeader {
     width: 145px;
-    height: 47px;
+    height: 45px;
   }
 
   .navHeader {
     width: 155px;
-    height: 21px;
+    height: 20px;
     text-transform: uppercase;
   }
 
@@ -64,11 +64,12 @@
   }
 }
 
-/*Media queries pour tablettes*/
+/*tablettes*/
 @media screen and (min-width: 481px) and (max-width: 830px) {
 
   .navHome,
   .navAbout {
     font-size: 16px;
   }
+
 }
