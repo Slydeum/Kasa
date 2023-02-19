@@ -48,7 +48,7 @@
   color: #ffffff;
 }
 
-/*Media queries pour mobiles*/
+/*mobiles*/
 
 @media screen and (max-width: 480px) {
   .card {
@@ -65,7 +65,7 @@
   }
 }
 
-/*Media queries pour tablettes*/
+/*tablettes*/
 
 @media screen and (min-width: 481px) and (max-width: 830px) {
   .card {
