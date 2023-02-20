@@ -5,22 +5,11 @@
   display: flex;
   justify-content: left;
   margin-bottom: 30px;
-  background: linear-gradient(180deg, #ff6060 30%, #863939 100%);
-  animation: appear 3s;
+  background-color: #ff6060;
 }
 
 .linkCard {
   display: contents;
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
 
 .card:hover {
