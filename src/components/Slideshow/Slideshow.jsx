@@ -4,16 +4,16 @@ import CssSlider from './Slideshow.module.css'
 import Arrow from '../../assets/iconarrow.svg'
 
 const Slideshow = (img) => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0) // initialise l'index à 0
 
   const previousImg = () => {
     const isFirstImg = currentIndex === 0
-    const newIndex = isFirstImg ? img.data.length - 1 : currentIndex - 1
+    const newIndex = isFirstImg ? img.data.length - 1 : currentIndex - 1 // décrémente l'index
     setCurrentIndex(newIndex)
   }
 
   const nextImg = () => {
-    const isLastImg = currentIndex === img.data.length - 1
+    const isLastImg = currentIndex === img.data.length - 1 //incrémente l'index
     const newIndex = isLastImg ? 0 : currentIndex + 1
     setCurrentIndex(newIndex)
   }

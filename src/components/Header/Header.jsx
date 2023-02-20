@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom' // permet la naviguation
 import Logo from '../../assets/logoHeader.svg'
 import CssHeader from './Header.module.css'
 

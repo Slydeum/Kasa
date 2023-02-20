@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom' // pour récupèrer l'id de l'url
 import Footer from '../../components/Footer/Footer'
 import Header from '../../components/Header/Header'
 import Error from '../Error/Error'
@@ -13,9 +13,9 @@ import StarEmpty from '../../assets/emptystar.png'
 
 const Lodging = () => {
   const urlId = useParams().id // récupération de l'id dans l'url
-  const data = housingsService.getById(urlId) // importation des données du fichier logements.json
+  const data = housingsService.getById(urlId) // import des données du fichier Housings.json
   const [dataLodging, setdataLodging] = useState({
-    // state des données que l'on voudra observer et afficher
+    // state des données
     id: '',
     title: '',
     cover: '',
@@ -38,7 +38,7 @@ const Lodging = () => {
   })
 
   if (dataLodging === undefined) {
-    // on retourne la page Error404 si les données son incorrectes
+    // page Error si les données ne sont pas correctes
     return <Error />
   }
 
@@ -51,7 +51,7 @@ const Lodging = () => {
     }
   }
 
-  const name = dataLodging.host.name.split(' ') // on sépare le nom du prénom dans les données
+  const name = dataLodging.host.name.split(' ') // séparation du nom et du prénom dans les données
 
   return (
     <div className="mainContainer">
